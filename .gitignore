@@ -1,8 +1,8 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
+GameJam/[Ll]ibrary/
+GameJam/[Tt]emp/
+GameJam/[Oo]bj/
+GameJam/[Bb]uild/
+GameJam/[Bb]uilds/
 /Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
