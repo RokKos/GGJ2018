@@ -18,6 +18,7 @@ public class MapController : MonoBehaviour {
                 obj.SetterOfCordinate(x, y);
                 obj.name = "Cord: X:" + x.ToString() + " Y:" + y.ToString();
                 obj.GameController = GameController;
+                obj.gameObject.SetActive(false);
 
             }
         }
