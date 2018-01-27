@@ -129,6 +129,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154574572 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114211415241931348, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+    type: 2}
+  m_PrefabInternal: {fileID: 651248589}
+  m_Script: {fileID: 11500000, guid: 470b448c44db8a64c8c1a696bc69a4ae, type: 3}
 --- !u!1 &185781845
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +435,7 @@ MonoBehaviour:
   DecodeText: {fileID: 651248595}
   UserInputedText: {fileID: 651248594}
   MapController: {fileID: 651248596}
+  UserInput: {fileID: 154574572}
   AllLevelData:
   - {fileID: 11400000, guid: 5b7bc6ed9f971bf4c98e7f6f853680c6, type: 2}
   - {fileID: 11400000, guid: 537498fb629e7f74b98f7d653bb1438b, type: 2}
