@@ -46,7 +46,7 @@ public class UserInput : MonoBehaviour {
         if(keyUpTime - keyDownTime <= time) {
             signal = ".";
         } else {
-            signal = "–";
+            signal = "-";
         }
         morseText.text += signal;
     }
