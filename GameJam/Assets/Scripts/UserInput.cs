@@ -44,7 +44,6 @@ public class UserInput : MonoBehaviour {
         keyUpTime = Time.time;
         string signal = "";
         if(keyUpTime - keyDownTime <= time) {
-            Debug.Log(keyUpTime - keyDownTime);
             signal = ".";
         } else {
             signal = "–";
