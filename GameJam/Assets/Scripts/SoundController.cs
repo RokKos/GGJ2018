@@ -220,4 +220,10 @@ public class SoundController : MonoBehaviour {
         TimeUntilNextSound += TimeBetweenSignals;
     }
 
+
+    public void PlayLevel (int levelNumber) {
+        string morseEncoding = TextToMorse(LevelText[levelNumber]);
+        MorseToSound(morseEncoding);
+        Debug.Log(morseEncoding);
+    }
 }
