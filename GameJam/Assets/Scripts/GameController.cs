@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
-    [SerializeField] GameObject MorseText;
+    [SerializeField] GameObject MorseHolder;
     [SerializeField] GameObject MapImage;
+
     [SerializeField] GameObject ResolutionHolder;
     [SerializeField] Text ResolutionText;
-    [SerializeField] SoundController SoundController;
+    [SerializeField] SoundController SoundManager;
+
     [SerializeField] List<LevelData> AllLevelData;
 
     enum PCScreenState { Morse, Map, Resolution };
@@ -44,18 +46,18 @@ public class GameController : MonoBehaviour {
     void EnableScreenObjects () {
         switch (PCState) {
             case PCScreenState.Morse:
-                MorseText.SetActive(true);
+                MorseHolder.SetActive(true);
                 MapImage.SetActive(false);
                 ResolutionHolder.SetActive(false);
                 break;
             case PCScreenState.Map:
-                MorseText.SetActive(false);
+                MorseHolder.SetActive(false);
                 MapImage.SetActive(true);
                 ResolutionHolder.SetActive(false);
                 break;
 
             case PCScreenState.Resolution:
-                MorseText.SetActive(false);
+                MorseHolder.SetActive(false);
                 MapImage.SetActive(false);
                 ResolutionHolder.SetActive(true);
                 break;
@@ -67,7 +69,6 @@ public class GameController : MonoBehaviour {
         EnableScreenObjects();
         SoundController.ResetQueue();
         SoundController.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
-       
     }
 
     public bool GetPastGameMenu () {

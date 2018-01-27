@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class DecodeText : MonoBehaviour {
 
+    public static string morseToSoundEncoding;
     [SerializeField] Text inputText;
     Text decodedInputText;
 
+    int letterCounter = 0;
     string currentLetter = "";
     string currentLetterDecoded = "";
 
@@ -27,7 +29,7 @@ public class DecodeText : MonoBehaviour {
     bool FindNewLetter()
     {
         if(lastSlashIndex > 0) {
-            currentLetter = inputText.text.Substring(lastSlashIndex + 1, inputText.text.Length - lastSlashIndex - 1);
+            currentLetter = inputText.text.Substring(lastSlashIndex, inputText.text.Length - lastSlashIndex);
         } else {
             currentLetter = inputText.text;
         }
@@ -36,14 +38,14 @@ public class DecodeText : MonoBehaviour {
         int counter = 0;
         foreach (char c in inputText.text) {
             counter++;
-            if (c == '/') {
+            if (c == ' ' || c == '#') {
                 newSlashIndex = counter;
             }
         }
 
         if (newSlashIndex > lastSlashIndex) {
             lastSlashIndex = newSlashIndex;
-            currentLetter = inputText.text.Substring(lastSlashIndex + 1, inputText.text.Length - lastSlashIndex - 1);
+            currentLetter = inputText.text.Substring(lastSlashIndex, inputText.text.Length - lastSlashIndex);
             return true;
         } else {
             return false;
@@ -53,12 +55,24 @@ public class DecodeText : MonoBehaviour {
     void DecodeNew()
     {
         decodedInputText.text += currentLetterDecoded;
+        letterCounter++;
+
+        int counter = 0;
+        foreach (char c in morseToSoundEncoding) {
+            if (c == '/' || c == '+') {
+                counter++;
+                if(c == '+' && letterCounter == counter) {
+                    RemoveOneLetter();
+                    decodedInputText.text += "   ";
+                }
+            }
+        } 
     }
 
     void Decode()
     {
         currentLetterDecoded = DecodeLetter(currentLetter);
-        if(decodedInputText.text.Length > 0) decodedInputText.text = decodedInputText.text.Substring(0, decodedInputText.text.Length-1);
+        RemoveOneLetter();
         decodedInputText.text += currentLetterDecoded;
     }
 
@@ -70,5 +84,10 @@ public class DecodeText : MonoBehaviour {
         } else {
             return "?";
         }
+    }
+
+    void RemoveOneLetter()
+    {
+        if (decodedInputText.text.Length > 0) decodedInputText.text = decodedInputText.text.Substring(0, decodedInputText.text.Length - 1);
     }
 }

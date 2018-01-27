@@ -258,7 +258,7 @@ public class SoundController : MonoBehaviour {
     public void PlayLevel (string textPlay) {
         string morseEncoding = TextToMorse(textPlay);
         MorseToSound(morseEncoding);
-        Debug.Log(morseEncoding);
+        DecodeText.morseToSoundEncoding = morseEncoding;
     }
 
     public void ResetQueue () {

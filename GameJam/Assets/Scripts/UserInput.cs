@@ -10,15 +10,18 @@ public class UserInput : MonoBehaviour {
 
     float keyDownTime;
     float keyUpTime;
-    Text morseText;
+    Text MorseHolder;
 
 	// Use this for initialization
 	void Start () {
-        morseText = GetComponent<Text>();
+        MorseHolder = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
+            Noise();
+        }
         if (Input.GetKeyDown(KeyCode.Space)) {
             KeyDown();
         }
@@ -38,8 +41,8 @@ public class UserInput : MonoBehaviour {
     void KeyUp()
     {
         float lastKeyUpTime = keyUpTime;
-        if(Time.time - lastKeyUpTime >= timeBetweenLetters && morseText.text != "") {
-            morseText.text += " / ";
+        if(Time.time - lastKeyUpTime >= timeBetweenLetters && MorseHolder.text != "") {
+            MorseHolder.text += " ";
         }
         keyUpTime = Time.time;
         string signal = "";
@@ -48,13 +51,18 @@ public class UserInput : MonoBehaviour {
         } else {
             signal = "-";
         }
-        morseText.text += signal;
+        MorseHolder.text += signal;
     }
 
     void RemoveLetter()
     {
-        if (morseText.text.Length > 0) {
-            morseText.text = morseText.text.Substring(0, morseText.text.Length - 1);
+        if (MorseHolder.text.Length > 0) {
+            MorseHolder.text = MorseHolder.text.Substring(0, MorseHolder.text.Length - 1);
         }
+    }
+
+    void Noise()
+    {
+        MorseHolder.text += " #";
     }
 }
