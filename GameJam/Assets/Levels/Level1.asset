@@ -16,6 +16,7 @@ MonoBehaviour:
   CorrectCordinateY: -1
   WinText: Tutorial finished
   LoseText: Tutorial finished
+  IndexOfImage: 0
   TankCord:
   - {x: 2, y: 2}
   - {x: 1, y: 5}
@@ -24,4 +25,4 @@ MonoBehaviour:
   - {x: 3, y: 1}
   SubMarineCord:
   - {x: 2, y: 3}
-  AutoComplete: 1
+  AutoComplete: 0
