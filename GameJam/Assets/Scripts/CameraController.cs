@@ -8,14 +8,18 @@ public class CameraController : MonoBehaviour {
     [SerializeField] AnimationCurve AnimationCurveZoomFactor;
     [SerializeField] AnimationCurve AnimationCurvePositionX;
     [SerializeField] AnimationCurve AnimationCurvePositionY;
-    const float ZoomInScale = 0.5f;
-    const float ZoomOutScale = 5f;
+    const float ZoomInScale = 6.5f;
+    const float ZoomOutScale = 17f;
     const float TimeToZoomOut = 3f;
+    const float StartingPosX = -4.18f;
+    const float StartingPosY = 5;
     float CurTime = 0;
+    
 
     // Update is called once per frame
     void Update () {
         ZoomOutCamera();
+        PositionCamera();
     }
 
     void ZoomOutCamera () {
@@ -34,8 +38,12 @@ public class CameraController : MonoBehaviour {
         }
         CurTime += Time.deltaTime;
 
-        float xCordinate = AnimationCurvePositionX.Evaluate(CurTime / TimeToZoomOut);
-        float yCordinate = AnimationCurvePositionY.Evaluate(CurTime / TimeToZoomOut);
+        float xValue = AnimationCurvePositionX.Evaluate(CurTime / TimeToZoomOut);
+        float posX = Mathf.Lerp(StartingPosX, 0.0f, xValue);
+        float yValue = AnimationCurvePositionY.Evaluate(CurTime / TimeToZoomOut);
+        float posY = Mathf.Lerp(StartingPosY, 0.0f, yValue);
+
+        Camera.transform.position = new Vector3(posX, posY, -10);
 
     }
 }
