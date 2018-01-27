@@ -77,7 +77,7 @@ public class GameController : MonoBehaviour {
         SoundManager.ResetQueue();
         SoundManager.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
         MapController.SetSpritesOnCordinates();
-
+        MapController.SetMapSprite(AllLevelData[LevelNumber].IndexOfImage);
     }
 
     public bool GetPastGameMenu () {

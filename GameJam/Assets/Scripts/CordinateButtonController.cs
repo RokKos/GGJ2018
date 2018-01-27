@@ -18,6 +18,15 @@ public class CordinateButtonController : MonoBehaviour {
     private int CordinateX = -1;
     private int CordinateY = -1;
 
+    private Dictionary<int, string> Alphanumerize = new Dictionary<int, string>() {
+        { 1, "A"},
+        { 2, "B"},
+        { 3, "C"},
+        { 4, "D"},
+        { 5, "E"},
+        { 6, "F"}
+    };
+
     // Use this for initialization
     void Start () {
         Button.onClick.AddListener(RecordCordinate);
@@ -49,7 +58,11 @@ public class CordinateButtonController : MonoBehaviour {
     public void SetterOfCordinate (int x, int y) {
         CordinateX = x;
         CordinateY = y;
-        TextCordinate.text = x.ToString() + "," + y.ToString();
+        string letter;
+        if (Alphanumerize.TryGetValue(y, out letter)) {
+            TextCordinate.text = letter + "," + x.ToString();
+        }
+        
     }
 
     public Vector2 GetCordinates () {

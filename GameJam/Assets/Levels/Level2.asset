@@ -15,3 +15,10 @@ MonoBehaviour:
     Rain cover fire close to their position.
   CorrectCordinateX: 4
   CorrectCordinateY: 2
+  WinText: 
+  LoseText: 
+  IndexOfImage: 1
+  TankCord: []
+  PlaneCord: []
+  SubMarineCord: []
+  AutoComplete: 1

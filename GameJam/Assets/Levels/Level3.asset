@@ -15,3 +15,10 @@ MonoBehaviour:
     gun. Cut the * comming from G3.
   CorrectCordinateX: 7
   CorrectCordinateY: 3
+  WinText: 
+  LoseText: 
+  IndexOfImage: 1
+  TankCord: []
+  PlaneCord: []
+  SubMarineCord: []
+  AutoComplete: 1
