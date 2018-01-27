@@ -11,6 +11,10 @@ public class CordinateButtonController : MonoBehaviour {
 
     public GameController GameController;
 
+    private const float AnimationTime = 1.0f;
+    private float CurrentTime = 0.0f;
+    private bool StartedAnimation = false;
+
     private int CordinateX = -1;
     private int CordinateY = -1;
 
@@ -19,12 +23,27 @@ public class CordinateButtonController : MonoBehaviour {
         Button.onClick.AddListener(RecordCordinate);
     }
 
+    private void Update () {
+        if (!StartedAnimation) {
+            return;
+        }
+
+        CurrentTime += Time.deltaTime;
+        if (CurrentTime > AnimationTime) {
+            GameController.GetPlayerAction(CordinateX, CordinateY);
+            StartedAnimation = false;
+        }
+    }
+
     void RecordCordinate () {
         Debug.Log("You have clicked the button!");
         Debug.Log(CordinateX + " " + CordinateY);
         Image.enabled = true;
         Image.color = Color.red;
-        GameController.GetPlayerAction(CordinateX, CordinateY);
+
+        // Start Animation
+        StartedAnimation = true;
+        CurrentTime = 0.0f;
     }
 
     public void SetterOfCordinate (int x, int y) {
