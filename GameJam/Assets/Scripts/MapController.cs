@@ -86,10 +86,10 @@ public class MapController : MonoBehaviour {
     }
 
     public void SetMapSprite (int index) {
-        if (index < 0 || index >= MapSprites.Count) {
+        /*if (index < 0 || index >= MapSprites.Count) {
             Image.sprite = MapSprites[0];
             return;
-        }
+        }*/
 
         Image.sprite = MapSprites[index];
     }
