@@ -450,6 +450,10 @@ MonoBehaviour:
   Show_text: {fileID: 1644284919}
   AllLevelData:
   - {fileID: 11400000, guid: 5b7bc6ed9f971bf4c98e7f6f853680c6, type: 2}
+  LevelText:
+  - SOS SOS
+  - SOS * SOS
+  - TEST IS ON
 --- !u!4 &747910154
 Transform:
   m_ObjectHideFlags: 0
@@ -574,6 +578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MorseText: {fileID: 1644284917}
   MapImage: {fileID: 873415728}
+  SoundController: {fileID: 747910153}
 --- !u!1 &1644284917
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +692,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114646144700838646, guid: 8eeee4fdad3bb054482db891e2d1a85c,
+        type: 2}
+      propertyPath: GameController
+      value: 
+      objectReference: {fileID: 1127595307}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8eeee4fdad3bb054482db891e2d1a85c, type: 2}
   m_IsPrefabParent: 0

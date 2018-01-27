@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour {
     [SerializeField] AnimationCurve AnimationCurveZoomFactor;
     [SerializeField] AnimationCurve AnimationCurvePositionX;
     [SerializeField] AnimationCurve AnimationCurvePositionY;
+    [SerializeField] GameController GameController;
     const float ZoomInScale = 6.5f;
     const float ZoomOutScale = 17f;
     const float TimeToZoomOut = 3f;
@@ -18,6 +19,10 @@ public class CameraController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        if (!GameController.GetPastGameMenu()) {
+            return;
+        }
+
         ZoomOutCamera();
         PositionCamera();
     }

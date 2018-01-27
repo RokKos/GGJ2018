@@ -152,6 +152,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+  GameController: {fileID: 0}
 --- !u!124 &124155716306233248
 Behaviour:
   m_ObjectHideFlags: 1

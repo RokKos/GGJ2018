@@ -41,4 +41,8 @@ public class GameController : MonoBehaviour {
         SoundController.PlayLevel(LevelNumber);
         LevelNumber++;
     }
+
+    public bool GetPastGameMenu () {
+        return PastGameMenu;
+    }
 }
