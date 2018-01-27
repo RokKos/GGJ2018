@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UserInput : MonoBehaviour {
 
+    [SerializeField] Animator rightArmAnimator;
+
     public float timeBetweenLetters = 1.5f;
     public float time = 0.2f;
 
@@ -24,9 +26,11 @@ public class UserInput : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.Space)) {
             KeyDown();
+            rightArmAnimator.SetBool("goDown", true);
         }
         if (Input.GetKeyUp(KeyCode.Space)) {
             KeyUp();
+            rightArmAnimator.SetBool("goDown", false);
         }
         if (Input.GetKeyUp(KeyCode.Backspace)) {
             RemoveLetter();
