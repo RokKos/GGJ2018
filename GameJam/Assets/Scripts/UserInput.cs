@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class UserInput : MonoBehaviour {
 
     [SerializeField] Animator rightArmAnimator;
+    [SerializeField] SoundController SoundController;
+
 
     public float timeBetweenLetters = 1.5f;
     public float time = 0.2f;
@@ -21,6 +23,10 @@ public class UserInput : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (!SoundController.SoundPlaying()) {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
             Noise();
         }

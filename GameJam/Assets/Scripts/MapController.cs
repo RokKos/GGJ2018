@@ -15,7 +15,7 @@ public class MapController : MonoBehaviour {
     private List<CordinateButtonController> AllCordinates = new List<CordinateButtonController>();
     [SerializeField] List<Sprite> MapSprites = new List<Sprite>();
 
-    const int LeftMostSide = -511;
+    const int LeftMostSide = -442;
     const int UpMostSide = 197;
     const int SizeOfButton = 145;
     // Use this for initialization

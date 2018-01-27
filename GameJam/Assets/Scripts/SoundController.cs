@@ -265,4 +265,8 @@ public class SoundController : MonoBehaviour {
     public void ResetQueue () {
         SoundsToPlay.Clear();
     }
+
+    public bool SoundPlaying () {
+        return SoundsToPlay.Count > 0;
+    }
 }
