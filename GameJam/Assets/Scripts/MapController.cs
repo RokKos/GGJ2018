@@ -29,6 +29,10 @@ public class MapController : MonoBehaviour {
                 obj.name = "Cord: X:" + x.ToString() + " Y:" + y.ToString();
                 obj.GameController = GameController;
                 obj.Image.enabled = false;
+                for (int k = 0; k < obj.childImages.Count; ++k) {
+                    obj.childImages[k].sprite = TankSprite;
+                    obj.childImages[k].enabled = false;
+                }
             }
         }
 	}
@@ -43,8 +47,10 @@ public class MapController : MonoBehaviour {
                 Vector2 cordButton = AllCordinates[j].GetCordinates();
                 bool matchingCordinates = cordButton.x == tankX && cordButton.y == tankY;
                 if (matchingCordinates) {
-                    AllCordinates[j].Image.sprite = TankSprite;
-                    AllCordinates[j].Image.enabled = true;
+                    for (int k = 0; k < AllCordinates[j].childImages.Count; ++k) {
+                        AllCordinates[j].childImages[k].sprite = TankSprite;
+                        AllCordinates[j].childImages[k].enabled = true;
+                    }
                 }
             }
         }
@@ -57,8 +63,10 @@ public class MapController : MonoBehaviour {
                 Vector2 cordButton = AllCordinates[j].GetCordinates();
                 bool matchingCordinates = cordButton.x == tankX && cordButton.y == tankY;
                 if (matchingCordinates) {
-                    AllCordinates[j].Image.sprite = AirplaneTankSprite;
-                    AllCordinates[j].Image.enabled = true;
+                    for (int k = 0; k < AllCordinates[j].childImages.Count; ++k) {
+                        AllCordinates[j].childImages[k].sprite = AirplaneTankSprite;
+                        AllCordinates[j].childImages[k].enabled = true;
+                    }
                 }
             }
         }
@@ -71,8 +79,10 @@ public class MapController : MonoBehaviour {
                 Vector2 cordButton = AllCordinates[j].GetCordinates();
                 bool matchingCordinates = cordButton.x == tankX && cordButton.y == tankY;
                 if (matchingCordinates) {
-                    AllCordinates[j].Image.sprite = SubmarineSprite;
-                    AllCordinates[j].Image.enabled = true;
+                    for (int k = 0; k < AllCordinates[j].childImages.Count; ++k) {
+                        AllCordinates[j].childImages[k].sprite = SubmarineSprite;
+                        AllCordinates[j].childImages[k].enabled = true;
+                    }
                 }
             }
         }

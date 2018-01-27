@@ -7,6 +7,7 @@ public class CordinateButtonController : MonoBehaviour {
 
     [SerializeField] Button Button;
     [SerializeField] Text TextCordinate;
+    public List<Image> childImages = new List<Image>();
     public Image Image;
 
     public GameController GameController;
