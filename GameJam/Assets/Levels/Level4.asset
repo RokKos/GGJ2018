@@ -15,3 +15,6 @@ MonoBehaviour:
     * at B3.
   CorrectCordinateX: 2
   CorrectCordinateY: 2
+  WinText: 
+  LoseText: 
+  AutoComplete: 0

@@ -22,6 +22,8 @@ public class CordinateButtonController : MonoBehaviour {
     void RecordCordinate () {
         Debug.Log("You have clicked the button!");
         Debug.Log(CordinateX + " " + CordinateY);
+        Image.enabled = true;
+        Image.color = Color.red;
         GameController.GetPlayerAction(CordinateX, CordinateY);
     }
 

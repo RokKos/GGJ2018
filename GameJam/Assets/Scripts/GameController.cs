@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour {
     [SerializeField] SoundController SoundManager;
     [SerializeField] DecodeText DecodeText;
     [SerializeField] UserInputedText UserInputedText;
+    [SerializeField] MapController MapController;
 
     [SerializeField] List<LevelData> AllLevelData;
 
@@ -103,6 +104,7 @@ public class GameController : MonoBehaviour {
     }
 
     public void NextLevelStart () {
+        MapController.ClearAllCordinates();
         StartLevel();
     }
 }

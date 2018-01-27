@@ -87,6 +87,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Button: {fileID: 114850029183506580}
   TextCordinate: {fileID: 114853742984294128}
+  Image: {fileID: 114307690166220556}
   GameController: {fileID: 0}
 --- !u!114 &114850029183506580
 MonoBehaviour:
@@ -209,5 +210,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 145, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
