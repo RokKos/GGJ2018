@@ -76,6 +76,8 @@ public class GameController : MonoBehaviour {
 
         SoundManager.ResetQueue();
         SoundManager.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
+        MapController.SetSpritesOnCordinates();
+
     }
 
     public bool GetPastGameMenu () {
@@ -106,5 +108,9 @@ public class GameController : MonoBehaviour {
     public void NextLevelStart () {
         MapController.ClearAllCordinates();
         StartLevel();
+    }
+
+    public LevelData GetLevelData () {
+        return AllLevelData[LevelNumber];
     }
 }

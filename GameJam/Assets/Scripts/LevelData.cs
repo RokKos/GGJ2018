@@ -12,5 +12,11 @@ public class LevelData : ScriptableObject {
     public string WinText = "";
     public string LoseText = "";
 
+    public int IndexOfImage = 0;
+
+    public List<Vector2> TankCord;
+    public List<Vector2> PlaneCord;
+    public List<Vector2> SubMarineCord;
+
     public bool AutoComplete = true;
 }

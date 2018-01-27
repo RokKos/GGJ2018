@@ -186,6 +186,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 115288813}
     m_Modifications:
+    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: MapSprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -287,6 +292,30 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: AirplaneTankSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 95d6286143bbe614fa9fc11ad8f647e7,
+        type: 3}
+    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: SubmarineSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0abdad4f304831349b9f924432008d45,
+        type: 3}
+    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: TankSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d7daca9dfa7cbb3439f8aeabe0cc435b,
+        type: 3}
+    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: MapSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e734fcd88be7ac45b731abc30ba9f37,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
   m_IsPrefabParent: 0

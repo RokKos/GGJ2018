@@ -51,4 +51,8 @@ public class CordinateButtonController : MonoBehaviour {
         CordinateY = y;
         TextCordinate.text = x.ToString() + "," + y.ToString();
     }
+
+    public Vector2 GetCordinates () {
+        return new Vector2(CordinateX, CordinateY);
+    }
 }

@@ -16,3 +16,12 @@ MonoBehaviour:
   CorrectCordinateY: -1
   WinText: Tutorial finished
   LoseText: Tutorial finished
+  TankCord:
+  - {x: 2, y: 2}
+  - {x: 1, y: 5}
+  - {x: 4, y: 4}
+  PlaneCord:
+  - {x: 3, y: 1}
+  SubMarineCord:
+  - {x: 2, y: 3}
+  AutoComplete: 1
