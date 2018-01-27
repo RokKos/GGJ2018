@@ -11,4 +11,6 @@ public class LevelData : ScriptableObject {
 
     public string WinText = "";
     public string LoseText = "";
+
+    public bool AutoComplete = true;
 }

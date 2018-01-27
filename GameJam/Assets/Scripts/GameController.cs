@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour {
     [SerializeField] GameObject ResolutionHolder;
     [SerializeField] Text ResolutionText;
     [SerializeField] SoundController SoundManager;
+    [SerializeField] DecodeText DecodeText;
+    [SerializeField] UserInputedText UserInputedText;
 
     [SerializeField] List<LevelData> AllLevelData;
 
@@ -67,6 +69,10 @@ public class GameController : MonoBehaviour {
     void StartLevel () {
         PCState = PCScreenState.Morse;
         EnableScreenObjects();
+
+        DecodeText.enabled = AllLevelData[LevelNumber].AutoComplete;
+        UserInputedText.enabled = !AllLevelData[LevelNumber].AutoComplete;
+
         SoundManager.ResetQueue();
         SoundManager.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
     }
