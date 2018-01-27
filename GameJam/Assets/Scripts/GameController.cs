@@ -67,8 +67,8 @@ public class GameController : MonoBehaviour {
     void StartLevel () {
         PCState = PCScreenState.Morse;
         EnableScreenObjects();
-        SoundController.ResetQueue();
-        SoundController.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
+        SoundManager.ResetQueue();
+        SoundManager.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
     }
 
     public bool GetPastGameMenu () {
