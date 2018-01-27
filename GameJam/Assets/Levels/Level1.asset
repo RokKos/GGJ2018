@@ -25,4 +25,4 @@ MonoBehaviour:
   - {x: 3, y: 1}
   SubMarineCord:
   - {x: 2, y: 3}
-  AutoComplete: 0
+  AutoComplete: 1

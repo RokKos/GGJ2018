@@ -17,4 +17,9 @@ MonoBehaviour:
   CorrectCordinateY: 2
   WinText: 
   LoseText: 
+  IndexOfImage: 0
+  TankCord:
+  - {x: 2, y: 2}
+  PlaneCord: []
+  SubMarineCord: []
   AutoComplete: 0

@@ -11,14 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
   m_Name: Level3
   m_EditorClassIdentifier: 
-  TextFromAudio: Mayday mayday. Our planes were hit at position H4 by anti-aircraft
-    gun. Cut the * comming from G3.
-  CorrectCordinateX: 7
-  CorrectCordinateY: 3
+  TextFromAudio: Mayday mayday. Our planes were hit at position D5 by anti-aircraft
+    gun. Cut the * comming from A5.
+  CorrectCordinateX: 5
+  CorrectCordinateY: 1
   WinText: 
   LoseText: 
   IndexOfImage: 1
   TankCord: []
-  PlaneCord: []
+  PlaneCord:
+  - {x: 5, y: 4}
   SubMarineCord: []
   AutoComplete: 1

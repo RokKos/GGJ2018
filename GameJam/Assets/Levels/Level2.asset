@@ -11,14 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
-  TextFromAudio: 37 brigade is approcing C7. Position of our * bataljon is at D2.
+  TextFromAudio: 37 brigade is approcing C6. Position of our * bataljon is at D2.
     Rain cover fire close to their position.
   CorrectCordinateX: 4
   CorrectCordinateY: 2
-  WinText: 
-  LoseText: 
+  WinText: Great Job! 37 Brigade crushed enemy do to your decision.
+  LoseText: 'You hit the wrong bataljon you fool. '
   IndexOfImage: 1
-  TankCord: []
+  TankCord:
+  - {x: 2, y: 4}
   PlaneCord: []
   SubMarineCord: []
   AutoComplete: 1

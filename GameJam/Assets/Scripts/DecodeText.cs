@@ -99,4 +99,8 @@ public class DecodeText : MonoBehaviour {
 
         decodedInputText.text = "";
     }
+
+    public void ChuckNoris (string text) {
+        decodedInputText.text = text;
+    }
 }

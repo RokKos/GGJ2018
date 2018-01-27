@@ -32,9 +32,14 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Return)) {
+        if (Input.GetKeyDown(KeyCode.Return) && !SoundManager.SoundPlaying()) {
             PastGameMenu = true;
             StartLevel();
+        }
+
+        if (Input.GetKeyDown(KeyCode.F5)) {
+            // Cheat
+            DecodeText.ChuckNoris(AllLevelData[LevelNumber].TextFromAudio);
         }
 
         if (Input.GetKeyDown(KeyCode.M)) {
