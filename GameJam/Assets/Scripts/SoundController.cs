@@ -59,7 +59,8 @@ public class SoundController : MonoBehaviour {
     // TODO: get this contants from audio file
     const float ShortTime = 0.3f;
     const float LongTime = 0.8f;
-    const float Pause = 1f;
+    const float Pause = 1.2f;
+    const float TimeBetweenSignals = 0.4f;
 
     float TimeUntilNextSound = 0.0f;
 
@@ -74,7 +75,9 @@ public class SoundController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.A)) {
-            MorseToSound(TextToMorse("TEST IS ON"));
+            string morseEncoding = TextToMorse("SOS SOS");
+            MorseToSound(morseEncoding);
+            Debug.Log(morseEncoding);
 
             //PickSoundToPlay();
             ShowText();
@@ -85,9 +88,26 @@ public class SoundController : MonoBehaviour {
     }
 
     void PickSoundToPlay (MorseSoundNames msn) {
-        AudioSource.clip = AllLevelData[0].MorseAudioShort;
+        switch (msn) {
+            case MorseSoundNames.Short:
+                AudioSource.clip = AllLevelData[0].MorseAudioShort;
+                break;
+            case MorseSoundNames.Long:
+                AudioSource.clip = AllLevelData[0].MorseAudioLong;
+                break;
+            
+            case MorseSoundNames.PauseBetweenSimbols:
+            case MorseSoundNames.PauseBetweenCharacters:
+            case MorseSoundNames.PauseBetweenWords:
+                AudioSource.clip = null;
+                break;
+        }
+
         AudioSource.Stop();
-        AudioSource.Play();
+        if (AudioSource.clip != null) {
+            AudioSource.Play();
+        }
+        
     }
 
     void ShowText () {
@@ -165,6 +185,8 @@ public class SoundController : MonoBehaviour {
                 TimeUntilNextSound = Pause;
                 break;
         }
+
+        TimeUntilNextSound += TimeBetweenSignals;
     }
 
 }
