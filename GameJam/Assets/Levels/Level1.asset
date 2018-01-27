@@ -14,3 +14,5 @@ MonoBehaviour:
   TextFromAudio: SOS * SOS
   CorrectCordinateX: -1
   CorrectCordinateY: -1
+  WinText: Tutorial finished
+  LoseText: Tutorial finished

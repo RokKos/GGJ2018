@@ -8,4 +8,7 @@ public class LevelData : ScriptableObject {
     public string TextFromAudio = "Test";
     public int CorrectCordinateX = -1;
     public int CorrectCordinateY = -1;
+
+    public string WinText = "";
+    public string LoseText = "";
 }

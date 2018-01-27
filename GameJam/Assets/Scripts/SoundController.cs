@@ -260,4 +260,8 @@ public class SoundController : MonoBehaviour {
         MorseToSound(morseEncoding);
         Debug.Log(morseEncoding);
     }
+
+    public void ResetQueue () {
+        SoundsToPlay.Clear();
+    }
 }
