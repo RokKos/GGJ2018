@@ -264,73 +264,51 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 165182735}
-  - {fileID: 1541318536}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1541318534
+--- !u!1001 &1449437757
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1256527678}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+    - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+    - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+    - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+    - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+    - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+    - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+    - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+    - target: {fileID: 4853806843020032, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1541318535 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114004767038737178, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1541318534}
-  m_Script: {fileID: 11500000, guid: 2fcf29e396b40a8408d3e545529ca2c9, type: 3}
---- !u!4 &1541318536 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4178169818970064, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1541318534}
---- !u!1 &1541318537 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1085720089945630, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1541318534}
---- !u!1 &1541318538 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1356644128975170, guid: dbb33b8c5aa908e4fa9ee51b342dbbe7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1541318534}
 --- !u!1 &1753577165
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,9 +349,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e74ecab0c45c924f972e1f228824fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MorseHolder: {fileID: 1541318538}
-  MapImage: {fileID: 1541318537}
-  SoundManager: {fileID: 1541318535}
+  MorseHolder: {fileID: 0}
+  MapImage: {fileID: 0}
+  ResolutionHolder: {fileID: 0}
+  ResolutionText: {fileID: 0}
+  SoundManager: {fileID: 0}
   AllLevelData:
   - {fileID: 11400000, guid: 5b7bc6ed9f971bf4c98e7f6f853680c6, type: 2}
   - {fileID: 11400000, guid: 537498fb629e7f74b98f7d653bb1438b, type: 2}
