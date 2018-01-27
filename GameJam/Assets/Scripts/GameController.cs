@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour {
 
     void StartLevel () {
         SoundController.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
-        LevelNumber++;
+        
     }
 
     public bool GetPastGameMenu () {
@@ -48,6 +48,17 @@ public class GameController : MonoBehaviour {
     }
 
     public void GetPlayerAction (int x, int y) {
-        
+        if (EvaluateAction(x, y)) {
+            // TODO: revard player
+        } else {
+            // TODO: penalize player
+        }
+
+        LevelNumber++;
+        StartLevel();
+    }
+
+    private bool EvaluateAction (int x, int y) {
+        return AllLevelData[LevelNumber].CorrectCordinateX == x && AllLevelData[LevelNumber].CorrectCordinateY == y;
     }
 }
