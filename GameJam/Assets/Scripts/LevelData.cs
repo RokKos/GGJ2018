@@ -7,5 +7,6 @@ using UnityEngine;
 public class LevelData : ScriptableObject {
     public AudioClip MorseAudioShort;
     public AudioClip MorseAudioLong;
+    public AudioClip MorseAudioNotClear;
     public string TextFromAudio = "Test";
 }

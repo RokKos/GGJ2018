@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MorseAudioShort: {fileID: 8300000, guid: c3b474a83db54f9429f1a8c502d6f201, type: 3}
   MorseAudioLong: {fileID: 8300000, guid: ebe8b15597acbe94c884764c695e6a87, type: 3}
+  MorseAudioNotClear: {fileID: 8300000, guid: 92485821499933342962c4c2dd3e0ef7, type: 3}
   TextFromAudio: Test

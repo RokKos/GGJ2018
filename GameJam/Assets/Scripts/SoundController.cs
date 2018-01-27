@@ -52,15 +52,25 @@ public class SoundController : MonoBehaviour {
         { "-","-....-" },
         {"?","..--.." },
         { ":","---..." },
-        { "@",".--.-." }
+        { "@",".--.-." },
+        { "*", "*"}
     };
 
-    enum MorseSoundNames {Short, Long, PauseBetweenSimbols, PauseBetweenCharacters, PauseBetweenWords };
+    List<string> LevelText = new List<string>() {
+        "SOS SOS",
+        "SOS * SOS",
+        "TEST IS ON"
+    };
+
+    enum MorseSoundNames {Short, Long, PauseBetweenSimbols, PauseBetweenCharacters, PauseBetweenWords, NotClearSound };
     // TODO: get this contants from audio file
     const float ShortTime = 0.3f;
     const float LongTime = 0.8f;
     const float Pause = 1.2f;
     const float TimeBetweenSignals = 0.4f;
+
+    const float MinNotClearSound = 0.5f;
+    const float MaxNotClearSound = 1.2f;
 
     float TimeUntilNextSound = 0.0f;
 
@@ -75,7 +85,7 @@ public class SoundController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.A)) {
-            string morseEncoding = TextToMorse("SOS SOS");
+            string morseEncoding = TextToMorse(LevelText[1]);
             MorseToSound(morseEncoding);
             Debug.Log(morseEncoding);
 
@@ -95,7 +105,11 @@ public class SoundController : MonoBehaviour {
             case MorseSoundNames.Long:
                 AudioSource.clip = AllLevelData[0].MorseAudioLong;
                 break;
-            
+
+            case MorseSoundNames.NotClearSound:
+                AudioSource.clip = AllLevelData[0].MorseAudioNotClear;
+                break;
+
             case MorseSoundNames.PauseBetweenSimbols:
             case MorseSoundNames.PauseBetweenCharacters:
             case MorseSoundNames.PauseBetweenWords:
@@ -118,14 +132,23 @@ public class SoundController : MonoBehaviour {
         string[] words = text.Split(' ');
         string morseEncoding = "";
         foreach (string word in words) {
-            for (int i = 0; i < word.Length; ++i) {
-                string encoding;
-                if (MorseAlphabet.TryGetValue(word.Substring(i,1), out encoding)) {
-                    morseEncoding += encoding;
+            Debug.Log(word);
+            if (word.Equals("*", System.StringComparison.Ordinal)) {
+                Debug.Log("here");
+                morseEncoding += "*";
+            } else {
+
+                for (int i = 0; i < word.Length; ++i) {
+                    string encoding;
+                    if (MorseAlphabet.TryGetValue(word.Substring(i, 1), out encoding)) {
+                        morseEncoding += encoding;
+                    }
+                    morseEncoding += "/";
                 }
-                morseEncoding += "/";
+
+                morseEncoding = morseEncoding.Substring(0, morseEncoding.Length - 1);
             }
-            morseEncoding = morseEncoding.Substring(0, morseEncoding.Length - 1);
+            
             morseEncoding += "+";
         }
 
@@ -149,6 +172,9 @@ public class SoundController : MonoBehaviour {
 
                 case '+':
                     SoundsToPlay.Enqueue(MorseSoundNames.PauseBetweenWords);
+                    break;
+                case '*':
+                    SoundsToPlay.Enqueue(MorseSoundNames.NotClearSound);
                     break;
             }
         }
@@ -183,6 +209,9 @@ public class SoundController : MonoBehaviour {
 
             case MorseSoundNames.PauseBetweenCharacters:
                 TimeUntilNextSound = Pause;
+                break;
+            case MorseSoundNames.NotClearSound:
+                TimeUntilNextSound = Random.Range(MinNotClearSound, MaxNotClearSound);
                 break;
         }
 
