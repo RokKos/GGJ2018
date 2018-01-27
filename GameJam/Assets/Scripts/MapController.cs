@@ -13,7 +13,7 @@ public class MapController : MonoBehaviour {
     [SerializeField] Sprite SubmarineSprite;
 
     private List<CordinateButtonController> AllCordinates = new List<CordinateButtonController>();
-    [SerializeField] List<Sprite> MapSprites;
+    [SerializeField] List<Sprite> MapSprites = new List<Sprite>();
 
     const int LeftMostSide = -511;
     const int UpMostSide = 197;
@@ -86,6 +86,7 @@ public class MapController : MonoBehaviour {
     }
 
     public void SetMapSprite (int index) {
+        Debug.Log(index);
         /*if (index < 0 || index >= MapSprites.Count) {
             Image.sprite = MapSprites[0];
             return;
