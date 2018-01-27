@@ -412,105 +412,6 @@ Prefab:
       propertyPath: GameController
       value: 
       objectReference: {fileID: 1127595307}
-    - target: {fileID: 114377293201627852, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7e734fcd88be7ac45b731abc30ba9f37,
-        type: 3}
-    - target: {fileID: 114377293201627852, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1064788610768374, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224102616209143200, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -8.424999
-      objectReference: {fileID: 0}
-    - target: {fileID: 224102616209143200, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -3.7619362
-      objectReference: {fileID: 0}
-    - target: {fileID: 224102616209143200, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 16.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 224102616209143200, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 26.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224243024263396840, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -3.7619
-      objectReference: {fileID: 0}
-    - target: {fileID: 224243024263396840, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 26.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224243024263396840, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -8.425
-      objectReference: {fileID: 0}
-    - target: {fileID: 224243024263396840, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 16.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 1756714807809230, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: AirplaneTankSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 95d6286143bbe614fa9fc11ad8f647e7,
-        type: 3}
-    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: SubmarineSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0abdad4f304831349b9f924432008d45,
-        type: 3}
-    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: TankSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d7daca9dfa7cbb3439f8aeabe0cc435b,
-        type: 3}
-    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: MapSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: bf47700bd767f304db915da527518e20,
-        type: 3}
-    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: MapSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: affdab5795e7be84da1c2b4ff44b721e,
-        type: 3}
-    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: Image
-      value: 
-      objectReference: {fileID: 651248597}
-    - target: {fileID: 114211415241931348, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-        type: 2}
-      propertyPath: SoundController
-      value: 
-      objectReference: {fileID: 651248593}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
   m_IsPrefabParent: 0
@@ -553,12 +454,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 651248589}
   m_Script: {fileID: 11500000, guid: dcb532d608a2ea647b361a2df2edf571, type: 3}
---- !u!114 &651248597 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114377293201627852, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
-    type: 2}
-  m_PrefabInternal: {fileID: 651248589}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &1016256095 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114608178313157396, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
