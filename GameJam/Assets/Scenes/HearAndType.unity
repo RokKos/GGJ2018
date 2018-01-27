@@ -307,6 +307,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114750777935051846, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756714807809230, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1064788610768374, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
   m_IsPrefabParent: 0
@@ -387,6 +400,9 @@ MonoBehaviour:
   ResolutionHolder: {fileID: 1449437761}
   ResolutionText: {fileID: 1449437760}
   SoundManager: {fileID: 1449437758}
+  DecodeText: {fileID: 0}
+  UserInputedText: {fileID: 0}
+  MapController: {fileID: 0}
   AllLevelData:
   - {fileID: 11400000, guid: 5b7bc6ed9f971bf4c98e7f6f853680c6, type: 2}
   - {fileID: 11400000, guid: 537498fb629e7f74b98f7d653bb1438b, type: 2}
