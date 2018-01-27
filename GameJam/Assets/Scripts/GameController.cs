@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
     [SerializeField] GameObject MorseText;
     [SerializeField] GameObject MapImage;
     [SerializeField] SoundController SoundController;
+    [SerializeField] List<LevelData> AllLevelData;
 
     private bool IsTextActive = true;
 
@@ -38,11 +39,15 @@ public class GameController : MonoBehaviour {
     }
 
     void StartLevel () {
-        SoundController.PlayLevel(LevelNumber);
+        SoundController.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
         LevelNumber++;
     }
 
     public bool GetPastGameMenu () {
         return PastGameMenu;
+    }
+
+    public void GetPlayerAction (int x, int y) {
+        
     }
 }

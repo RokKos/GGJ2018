@@ -5,8 +5,7 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Data", menuName = "Inventory/List", order = 1)]
 public class LevelData : ScriptableObject {
-    public AudioClip MorseAudioShort;
-    public AudioClip MorseAudioLong;
-    public AudioClip MorseAudioNotClear;
     public string TextFromAudio = "Test";
+    public int CorrectCordinateX = -1;
+    public int CorrectCordinateY = -1;
 }

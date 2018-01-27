@@ -243,6 +243,12 @@ MonoBehaviour:
   MorseText: {fileID: 1494706675}
   MapImage: {fileID: 627361010}
   SoundController: {fileID: 540553571}
+  AllLevelData:
+  - {fileID: 11400000, guid: 5b7bc6ed9f971bf4c98e7f6f853680c6, type: 2}
+  - {fileID: 11400000, guid: 537498fb629e7f74b98f7d653bb1438b, type: 2}
+  - {fileID: 11400000, guid: 64c9e73f122ca0d40aa94ad0e35722bb, type: 2}
+  - {fileID: 11400000, guid: 99ab66ffbec4a7745a2e67349dc04cf7, type: 2}
+  - {fileID: 11400000, guid: d594153f67a16464ca7b9fc0064a829c, type: 2}
 --- !u!1001 &1230757260
 Prefab:
   m_ObjectHideFlags: 0

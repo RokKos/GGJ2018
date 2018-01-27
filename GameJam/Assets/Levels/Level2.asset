@@ -9,8 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
-  m_Name: Level1
+  m_Name: Level2
   m_EditorClassIdentifier: 
-  TextFromAudio: SOS SOS
-  CorrectCordinateX: -1
-  CorrectCordinateY: -1
+  TextFromAudio: 37 brigade is approcing C7. Position of our * bataljon is at D2.
+    Rain cover fire close to their position.
+  CorrectCordinateX: 4
+  CorrectCordinateY: 2

@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class SoundController : MonoBehaviour {
 
     [SerializeField] AudioSource AudioSource;
+    [SerializeField] AudioClip MorseAudioShort;
+    [SerializeField] AudioClip MorseAudioLong;
+    [SerializeField] AudioClip MorseAudioNotClear;
     [SerializeField] Text Show_text;
-
-    [SerializeField] List<LevelData> AllLevelData;
 
     Dictionary<string, string> MorseAlphabet = new Dictionary<string, string>() {
         {"A",".-" },
@@ -98,14 +99,14 @@ public class SoundController : MonoBehaviour {
     void PickSoundToPlay (MorseSoundNames msn) {
         switch (msn) {
             case MorseSoundNames.Short:
-                AudioSource.clip = AllLevelData[0].MorseAudioShort;
+                AudioSource.clip = MorseAudioShort;
                 break;
             case MorseSoundNames.Long:
-                AudioSource.clip = AllLevelData[0].MorseAudioLong;
+                AudioSource.clip = MorseAudioLong;
                 break;
 
             case MorseSoundNames.NotClearSound:
-                AudioSource.clip = AllLevelData[0].MorseAudioNotClear;
+                AudioSource.clip = MorseAudioNotClear;
                 break;
 
             case MorseSoundNames.PauseBetweenSimbols:
@@ -216,8 +217,8 @@ public class SoundController : MonoBehaviour {
     }
 
 
-    public void PlayLevel (int levelNumber) {
-        string morseEncoding = TextToMorse(LevelText[levelNumber]);
+    public void PlayLevel (string textPlay) {
+        string morseEncoding = TextToMorse(textPlay);
         MorseToSound(morseEncoding);
         Debug.Log(morseEncoding);
     }

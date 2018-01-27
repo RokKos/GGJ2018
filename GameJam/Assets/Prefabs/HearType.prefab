@@ -346,6 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabButton: {fileID: 114358089544165318, guid: 6b4f23f4eeb7e524d81688db620210d4,
     type: 2}
+  GameController: {fileID: 0}
 --- !u!114 &114533001458042946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -428,9 +429,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 82909254706089558}
+  MorseAudioShort: {fileID: 8300000, guid: c3b474a83db54f9429f1a8c502d6f201, type: 3}
+  MorseAudioLong: {fileID: 8300000, guid: ebe8b15597acbe94c884764c695e6a87, type: 3}
+  MorseAudioNotClear: {fileID: 8300000, guid: 92485821499933342962c4c2dd3e0ef7, type: 3}
   Show_text: {fileID: 114700993512142532}
-  AllLevelData:
-  - {fileID: 11400000, guid: 5b7bc6ed9f971bf4c98e7f6f853680c6, type: 2}
   LevelText:
   - SOS SOS
   - Some text.

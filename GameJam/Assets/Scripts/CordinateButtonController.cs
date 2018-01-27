@@ -8,6 +8,8 @@ public class CordinateButtonController : MonoBehaviour {
     [SerializeField] Button Button;
     [SerializeField] Text TextCordinate;
 
+    public GameController GameController;
+
     private int CordinateX = -1;
     private int CordinateY = -1;
 
@@ -19,6 +21,7 @@ public class CordinateButtonController : MonoBehaviour {
     void RecordCordinate () {
         Debug.Log("You have clicked the button!");
         Debug.Log(CordinateX + " " + CordinateY);
+        GameController.GetPlayerAction(CordinateX, CordinateY);
     }
 
     public void SetterOfCordinate (int x, int y) {
