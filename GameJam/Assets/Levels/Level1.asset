@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  TextFromAudio: SOS SOS
+  TextFromAudio: SOS * SOS
   CorrectCordinateX: -1
   CorrectCordinateY: -1

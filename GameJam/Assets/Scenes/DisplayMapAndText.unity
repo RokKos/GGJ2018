@@ -157,6 +157,11 @@ Prefab:
       propertyPath: GameController
       value: 
       objectReference: {fileID: 1127595307}
+    - target: {fileID: 82084031729679330, guid: edc18858e542737449920a5b7548646b,
+        type: 2}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edc18858e542737449920a5b7548646b, type: 2}
   m_IsPrefabParent: 0
