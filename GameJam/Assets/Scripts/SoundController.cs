@@ -110,8 +110,8 @@ public class SoundController : MonoBehaviour {
     const float Pause = 1.2f;
     const float TimeBetweenSignals = 0.4f;
 
-    const float MinNotClearSound = 0.5f;
-    const float MaxNotClearSound = 1.2f;
+    const float MinNotClearSound = 1f;
+    const float MaxNotClearSound = 10f;
 
     float TimeUntilNextSound = 0.0f;
 
