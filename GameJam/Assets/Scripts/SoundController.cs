@@ -11,7 +11,7 @@ public class SoundController : MonoBehaviour {
     [SerializeField] AudioClip MorseAudioNotClear;
     [SerializeField] Text Show_text;
 
-    Dictionary<string, string> MorseAlphabet = new Dictionary<string, string>() {
+    public static Dictionary<string, string> AlphabetToMorse = new Dictionary<string, string>() {
         {"A",".-" },
         { "B","-..." },
         { "C","-.-." },
@@ -57,10 +57,50 @@ public class SoundController : MonoBehaviour {
         { "*", "*"}
     };
 
-    [SerializeField] List<string> LevelText = new List<string>() {
-        "SOS SOS",
-        "SOS * SOS",
-        "TEST IS ON"
+    public static Dictionary<string, string> MorseToAlphabet = new Dictionary<string, string>() {
+        { ".-","A" },
+        { "-...","B" },
+        { "-.-.","C" },
+        { "-..","D" },
+        { ".","E" },
+        { "..-.","F" },
+        { "--.","G" },
+        { "....","H" },
+        { "..","I" },
+        { ".---","J" },
+        { "-.-","K" },
+        { ".-..","L" },
+        { "--","M" },
+        { "-.","N" },
+        { "---","O" },
+        { ".--.","P" },
+        { "--.-","Q" },
+        { ".-.","R" },
+        { "...","S" },
+        { "-","T" },
+        { "..-","U" },
+        { "...-","V" },
+        { ".--","W" },
+        { "-..-","X" },
+        { "-.--","Y" },
+        { "--..","Z" },
+        { "-----","0" },
+        { ".----","1" },
+        { "..---","2" },
+        { "...--","3" },
+        { "....-","4" },
+        { ".....","5" },
+        { "-....","6" },
+        { "--...","7" },
+        { "---..","8" },
+        { "----.","9" },
+        { ".-.-.-","." },
+        { "--..--","," },
+        { "-....-","-" },
+        { "..--..","?" },
+        { "---...",":" },
+        { ".--.-.","@" },
+        { "*", "*" }
     };
 
     enum MorseSoundNames {Short, Long, PauseBetweenSimbols, PauseBetweenCharacters, PauseBetweenWords, NotClearSound };
@@ -129,15 +169,13 @@ public class SoundController : MonoBehaviour {
         string[] words = text.Split(' ');
         string morseEncoding = "";
         foreach (string word in words) {
-            Debug.Log(word);
             if (word.Equals("*", System.StringComparison.Ordinal)) {
-                Debug.Log("here");
                 morseEncoding += "*";
             } else {
 
                 for (int i = 0; i < word.Length; ++i) {
                     string encoding;
-                    if (MorseAlphabet.TryGetValue(word.Substring(i, 1), out encoding)) {
+                    if (AlphabetToMorse.TryGetValue(word.Substring(i, 1), out encoding)) {
                         morseEncoding += encoding;
                     }
                     morseEncoding += "/";

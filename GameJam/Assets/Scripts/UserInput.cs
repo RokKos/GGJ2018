@@ -38,7 +38,7 @@ public class UserInput : MonoBehaviour {
     void KeyUp()
     {
         float lastKeyUpTime = keyUpTime;
-        if(Time.time - lastKeyUpTime >= timeBetweenLetters) {
+        if(Time.time - lastKeyUpTime >= timeBetweenLetters && morseText.text != "") {
             morseText.text += " / ";
         }
         keyUpTime = Time.time;
