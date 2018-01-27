@@ -86,11 +86,11 @@ public class SoundController : MonoBehaviour {
 	void Update () {
 
         // manjka en if statement (bool startGame iz GameManager-ja) zato, da se naslednja koda lahko izvede samo enkrat
-        if (Input.GetKeyDown(KeyCode.Return)) {
+        /*if (Input.GetKeyDown(KeyCode.Return)) {
             string morseEncoding = TextToMorse(LevelText[0]);
             MorseToSound(morseEncoding);
             Debug.Log(morseEncoding);
-        }
+        }*/
 
         PlayEnuedSounds();
     }
