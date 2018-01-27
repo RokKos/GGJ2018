@@ -241,7 +241,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1064788610768374, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224102616209143200, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
         type: 2}
@@ -357,11 +357,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e74ecab0c45c924f972e1f228824fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MorseText: {fileID: 651248592}
+  MorseHolder: {fileID: 651248592}
   MapImage: {fileID: 651248591}
   ResolutionHolder: {fileID: 449863363}
   ResolutionText: {fileID: 1016256095}
-  SoundController: {fileID: 651248593}
+  SoundManager: {fileID: 651248593}
   AllLevelData:
   - {fileID: 11400000, guid: 5b7bc6ed9f971bf4c98e7f6f853680c6, type: 2}
   - {fileID: 11400000, guid: 537498fb629e7f74b98f7d653bb1438b, type: 2}
