@@ -11,5 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  MorseAudio: {fileID: 8300000, guid: 204c57417ff38334e84af7eaa06005e8, type: 3}
+  MorseAudioShort: {fileID: 8300000, guid: c3b474a83db54f9429f1a8c502d6f201, type: 3}
+  MorseAudioLong: {fileID: 8300000, guid: ebe8b15597acbe94c884764c695e6a87, type: 3}
   TextFromAudio: Test

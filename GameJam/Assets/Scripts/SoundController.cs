@@ -63,7 +63,7 @@ public class SoundController : MonoBehaviour {
 
     float TimeUntilNextSound = 0.0f;
 
-    Queue<MorseSoundNames> SoundsToPlay;
+    Queue<MorseSoundNames> SoundsToPlay = new Queue<MorseSoundNames>();
 
 
     // Use this for initialization
