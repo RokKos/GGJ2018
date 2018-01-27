@@ -49,7 +49,7 @@ public class CordinateButtonController : MonoBehaviour {
         Debug.Log("You have clicked the button!");
         Debug.Log(CordinateX + " " + CordinateY);
         Image.enabled = true;
-        Image.color = Color.red;
+        Image.color = Color.white;
 
         // Start Animation
         StartedAnimation = true;
