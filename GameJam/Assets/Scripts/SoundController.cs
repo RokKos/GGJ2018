@@ -56,7 +56,7 @@ public class SoundController : MonoBehaviour {
         { "*", "*"}
     };
 
-    List<string> LevelText = new List<string>() {
+    [SerializeField] List<string> LevelText = new List<string>() {
         "SOS SOS",
         "SOS * SOS",
         "TEST IS ON"
@@ -84,8 +84,8 @@ public class SoundController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.A)) {
-            string morseEncoding = TextToMorse(LevelText[1]);
+        if (Input.GetKeyDown(KeyCode.Return)) {
+            string morseEncoding = TextToMorse(LevelText[0]);
             MorseToSound(morseEncoding);
             Debug.Log(morseEncoding);
 
@@ -129,6 +129,7 @@ public class SoundController : MonoBehaviour {
     }
 
     string TextToMorse (string text) {
+        text = text.ToUpper();
         string[] words = text.Split(' ');
         string morseEncoding = "";
         foreach (string word in words) {
@@ -157,6 +158,7 @@ public class SoundController : MonoBehaviour {
     }
 
     void MorseToSound (string encoding) {
+        SoundsToPlay.Enqueue(MorseSoundNames.PauseBetweenWords);
         for (int i = 0; i < encoding.Length; ++i) {
             switch (encoding[i]) {
                 case '.':
