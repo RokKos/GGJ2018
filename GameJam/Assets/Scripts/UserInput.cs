@@ -69,4 +69,8 @@ public class UserInput : MonoBehaviour {
     {
         MorseHolder.text += " #";
     }
+
+    public void ResetMorseText () {
+        MorseHolder.text = "";
+    }
 }

@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour {
     [SerializeField] DecodeText DecodeText;
     [SerializeField] UserInputedText UserInputedText;
     [SerializeField] MapController MapController;
+    [SerializeField] UserInput UserInput;
 
     [SerializeField] List<LevelData> AllLevelData;
 
@@ -73,11 +74,21 @@ public class GameController : MonoBehaviour {
 
         DecodeText.enabled = AllLevelData[LevelNumber].AutoComplete;
         UserInputedText.enabled = !AllLevelData[LevelNumber].AutoComplete;
+        if (UserInputedText.enabled) {
+            UserInputedText.ResetUserText();
+        }
+        if (DecodeText.enabled) {
+            DecodeText.ResetDecode();
+        }
 
+        UserInput.ResetMorseText();
+       
         SoundManager.ResetQueue();
         SoundManager.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
         MapController.SetSpritesOnCordinates();
         MapController.SetMapSprite(AllLevelData[LevelNumber].IndexOfImage);
+        
+
     }
 
     public bool GetPastGameMenu () {

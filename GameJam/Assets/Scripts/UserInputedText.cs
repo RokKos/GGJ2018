@@ -49,4 +49,8 @@ public class UserInputedText : MonoBehaviour {
         newText += charBefore;
         return newText;
     }
+
+    public void ResetUserText () {
+        textElement.text = "";
+    }
 }

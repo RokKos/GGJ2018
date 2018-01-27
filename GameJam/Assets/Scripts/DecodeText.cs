@@ -90,4 +90,13 @@ public class DecodeText : MonoBehaviour {
     {
         if (decodedInputText.text.Length > 0) decodedInputText.text = decodedInputText.text.Substring(0, decodedInputText.text.Length - 1);
     }
+
+    public void ResetDecode () {
+        letterCounter = 0;
+        lastSlashIndex = 0;
+        currentLetter = "";
+        currentLetterDecoded = "";
+
+        decodedInputText.text = "";
+    }
 }
