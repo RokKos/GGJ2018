@@ -205,7 +205,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 38f2f1223e4cdc2459ed01d132fb93aa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4fee603bbc5968640ba072da7eeb34d1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1328,6 +1328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e74ecab0c45c924f972e1f228824fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rightArmAnimator: {fileID: 0}
   MorseHolder: {fileID: 651248592}
   MapImage: {fileID: 651248591}
   ResolutionHolder: {fileID: 449863363}
