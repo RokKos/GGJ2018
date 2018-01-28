@@ -1210,8 +1210,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "ENTERT - Start Transmition\nM - OPEN MAP\nE - INFO\n\nCREDITS:\nArt: \nMiha\nLoris
-    Timotej Vodeb\nSound:\nMaja Salomon\nProgramming:\nDomen Golob\nRok Kos\n"
+  m_Text: "ENTERT - Start Transmition\nM - OPEN MAP\nE - INFO\n\nCREDITS:\nArt: \nMiha
+    Gorsin\nLoris Timotej Vodeb\nSound:\nMaja Salomon\nProgramming:\nDomen Golob\nRok
+    Kos\n"
 --- !u!222 &1061955650
 CanvasRenderer:
   m_ObjectHideFlags: 0
