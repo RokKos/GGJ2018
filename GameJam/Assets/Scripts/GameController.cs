@@ -172,4 +172,14 @@ public class GameController : MonoBehaviour {
         LevelNumber = AllLevelData.Count - 1;
         StartLevel();
     }
+
+    public void LevelUp () {
+        LevelNumber = Mathf.Min(LevelNumber + 1, AllLevelData.Count - 1);
+        StartLevel();
+    }
+
+    public void LevelDown () {
+        LevelNumber = Mathf.Max(LevelNumber - 1, 0);
+        StartLevel();
+    }
 }
