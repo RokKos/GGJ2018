@@ -1133,6 +1133,11 @@ Prefab:
       propertyPath: CameraController
       value: 
       objectReference: {fileID: 1486142696}
+    - target: {fileID: 114702897845957852, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: GameController
+      value: 
+      objectReference: {fileID: 1127595307}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
   m_IsPrefabParent: 0
@@ -1592,6 +1597,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 64c9e73f122ca0d40aa94ad0e35722bb, type: 2}
   - {fileID: 11400000, guid: 99ab66ffbec4a7745a2e67349dc04cf7, type: 2}
   - {fileID: 11400000, guid: d594153f67a16464ca7b9fc0064a829c, type: 2}
+  - {fileID: 11400000, guid: 5cb91fcef7666e84896b1c0e9dcbceba, type: 2}
 --- !u!82 &1127595308
 AudioSource:
   m_ObjectHideFlags: 0

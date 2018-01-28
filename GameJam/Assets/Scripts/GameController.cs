@@ -51,6 +51,11 @@ public class GameController : MonoBehaviour {
             DecodeText.ChuckNoris(AllLevelData[LevelNumber].TextFromAudio);
         }
 
+        if (Input.GetKeyDown(KeyCode.F7)) {
+            // Skip levels to go to free roam
+            SkipToLastLevel();
+        }
+
         if (Input.GetKeyDown(KeyCode.M)) {
             if (PCState == PCScreenState.Morse) {
                 PCState = PCScreenState.Map;
@@ -155,6 +160,11 @@ public class GameController : MonoBehaviour {
     }
 
     public void ResetTransmition () {
+        StartLevel();
+    }
+
+    private void SkipToLastLevel () {
+        LevelNumber = AllLevelData.Count - 1;
         StartLevel();
     }
 }

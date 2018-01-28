@@ -10,6 +10,7 @@ public class SoundController : MonoBehaviour {
     [SerializeField] AudioClip MorseAudioLong;
     [SerializeField] AudioClip MorseAudioNotClear;
     [SerializeField] Text Show_text;
+    [SerializeField] GameController GameController;
 
     public static Dictionary<string, string> AlphabetToMorse = new Dictionary<string, string>() {
         {"A",".-" },
@@ -159,6 +160,10 @@ public class SoundController : MonoBehaviour {
 
 
     string TextToMorse (string text) {
+        if (text == "") {
+            return "";
+        }
+
         text = text.ToUpper();
         string[] words = text.Split(' ');
         string morseEncoding = "";
@@ -186,6 +191,10 @@ public class SoundController : MonoBehaviour {
     }
 
     void MorseToSound (string encoding) {
+        if (encoding == "") {
+            return;
+        }
+
         SoundsToPlay.Enqueue(MorseSoundNames.PauseBetweenWords);
         for (int i = 0; i < encoding.Length; ++i) {
             switch (encoding[i]) {
@@ -260,6 +269,6 @@ public class SoundController : MonoBehaviour {
     }
 
     public bool SoundPlaying () {
-        return SoundsToPlay.Count > 0;
+        return SoundsToPlay.Count > 0 || GameController.GetLevelData().FreeRoamMode;
     }
 }

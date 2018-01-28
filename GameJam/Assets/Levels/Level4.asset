@@ -22,4 +22,5 @@ MonoBehaviour:
   - {x: 2, y: 2}
   PlaneCord: []
   SubMarineCord: []
-  AutoComplete: 0
+  AutoComplete: 1
+  FreeRoamMode: 0

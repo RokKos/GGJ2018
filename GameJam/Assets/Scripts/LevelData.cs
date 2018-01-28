@@ -19,4 +19,5 @@ public class LevelData : ScriptableObject {
     public List<Vector2> SubMarineCord;
 
     public bool AutoComplete = true;
+    public bool FreeRoamMode = false;
 }

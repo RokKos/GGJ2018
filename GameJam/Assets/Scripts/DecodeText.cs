@@ -39,7 +39,7 @@ public class DecodeText : MonoBehaviour {
         foreach (char c in inputText.text) {
             counter++;
             if (c == ' ' || c == '#') {
-                Debug.Log(lastSlashIndex + " NEW: " + newSlashIndex);
+                //Debug.Log(lastSlashIndex + " NEW: " + newSlashIndex);
                 newSlashIndex = counter;
             }
         }
