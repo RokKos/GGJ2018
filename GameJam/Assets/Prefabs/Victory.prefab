@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 4620920302090686}
   - component: {fileID: 212763950109309184}
   - component: {fileID: 95430003923898484}
+  - component: {fileID: 114383045525101120}
   m_Layer: 0
   m_Name: Victory
   m_TagString: Untagged
@@ -172,6 +173,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114383045525101120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944953308479018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162c3ceddf50187439ed9d9e7fe3aae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114395118569543404
 MonoBehaviour:
   m_ObjectHideFlags: 1

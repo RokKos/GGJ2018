@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayAudioTvOnAt : MonoBehaviour {
 
-    [SerializeField] float delay = 0.2f;
+    [SerializeField] float delayTime = 0.2f;
 
 	// Use this for initialization
 	void Start () {
-        GetComponent<AudioSource>().PlayDelayed(delay);
+        GetComponent<AudioSource>().PlayDelayed(delayTime);
 	}
 }

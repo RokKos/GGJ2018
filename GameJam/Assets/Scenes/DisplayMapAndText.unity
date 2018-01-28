@@ -741,7 +741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21f596a3f1d8f1d469104de92dc2bf0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delayTime: 0.2
 --- !u!1 &449863363 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1064788610768374, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
