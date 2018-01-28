@@ -11,6 +11,7 @@ public class UIController : MonoBehaviour {
     [SerializeField] GameObject InfoPanel;
     [SerializeField] Image EndImage;
     [SerializeField] Sprite EndSprite;
+    [SerializeField] Text InstructionText;
 
     const float CountDownTimer = 3.0f;
     float CurrentTime = 0;
@@ -64,5 +65,9 @@ public class UIController : MonoBehaviour {
         InfoOn = !InfoOn;
         InfoPanel.SetActive(InfoOn);
         MainCanvas.SetActive(InfoOn);
+    }
+
+    public void SetInstrucitonText (string text) {
+        InstructionText.text = text;
     }
 }

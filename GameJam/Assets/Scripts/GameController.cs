@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
     [SerializeField] UserInputedText UserInputedText;
     [SerializeField] MapController MapController;
     [SerializeField] UserInput UserInput;
+    [SerializeField] UIController UIController;
 
     [SerializeField] List<LevelData> AllLevelData;
 
@@ -25,6 +26,7 @@ public class GameController : MonoBehaviour {
 
     private int LevelNumber = 0;
     private bool PastGameMenu = false;
+    private bool CheckForEndSound = false;
 
     // Use this for initialization
     void Start () {
@@ -36,6 +38,10 @@ public class GameController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Return) && !SoundManager.SoundPlaying()) {
             PastGameMenu = true;
             StartLevel();
+        }
+
+        if (CheckForEndSound && !SoundManager.SoundPlaying()) {
+            UIController.SetInstrucitonText("PRESS M");
         }
 
         if (Input.GetKeyDown(KeyCode.F5)) {
@@ -91,11 +97,14 @@ public class GameController : MonoBehaviour {
 
 
         UserInput.ResetMorseText();
-       
+        CheckForEndSound = false;
         SoundManager.ResetQueue();
         SoundManager.PlayLevel(AllLevelData[LevelNumber].TextFromAudio);
         MapController.SetSpritesOnCordinates();
         MapController.SetMapSprite(AllLevelData[LevelNumber].IndexOfImage);
+
+        UIController.SetInstrucitonText("USE SPACE TO CAPTURE BEEPS");
+        CheckForEndSound = true;
     }
 
     public bool GetPastGameMenu () {

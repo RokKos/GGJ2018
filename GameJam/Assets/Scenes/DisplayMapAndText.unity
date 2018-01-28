@@ -158,6 +158,7 @@ MonoBehaviour:
   InfoPanel: {fileID: 1010167614}
   EndImage: {fileID: 1407136086}
   EndSprite: {fileID: 21300000, guid: 4388f92c42b3a6c4591d32105b1d039a, type: 3}
+  InstructionText: {fileID: 917214279}
 --- !u!114 &74426386 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114734885830820004, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
@@ -1067,6 +1068,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &917214279 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114681961144794414, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+    type: 2}
+  m_PrefabInternal: {fileID: 651248589}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1010167614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1376,7 @@ MonoBehaviour:
   UserInputedText: {fileID: 651248594}
   MapController: {fileID: 651248596}
   UserInput: {fileID: 154574572}
+  UIController: {fileID: 18994220}
   AllLevelData:
   - {fileID: 11400000, guid: 5b7bc6ed9f971bf4c98e7f6f853680c6, type: 2}
   - {fileID: 11400000, guid: 537498fb629e7f74b98f7d653bb1438b, type: 2}
