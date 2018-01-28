@@ -371,6 +371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IntroSound: {fileID: 8300000, guid: aee06b7c631594945b9f1f6c054aa248, type: 3}
+  LoopSoundStart: {fileID: 8300000, guid: 4e12097439a33a2438ed951ccf51b07c, type: 3}
+  LoopSoundLoop: {fileID: 8300000, guid: e915c1e57ee548a48a2bca20d99d2407, type: 3}
   AudioSource: {fileID: 123627678}
 --- !u!82 &123627678
 AudioSource:
@@ -383,7 +385,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.35
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
