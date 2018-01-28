@@ -119,16 +119,20 @@ public class GameController : MonoBehaviour {
     }
 
     public void GetPlayerAction (int x, int y) {
-        
-
-        if (EvaluateAction(x, y)) {
-            // TODO: revard player
+        if (LevelNumber == 0) {
             Reward();
             ResolutionText.text = AllLevelData[LevelNumber].WinText;
         } else {
-            // TODO: penalize player
-            Penalize();
-            ResolutionText.text = AllLevelData[LevelNumber].LoseText;
+
+            if (EvaluateAction(x, y)) {
+                // TODO: revard player
+                Reward();
+                ResolutionText.text = AllLevelData[LevelNumber].WinText;
+            } else {
+                // TODO: penalize player
+                Penalize();
+                ResolutionText.text = AllLevelData[LevelNumber].LoseText;
+            }
         }
 
         PCState = PCScreenState.Resolution;
