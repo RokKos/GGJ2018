@@ -8,6 +8,7 @@ public class CordinateButtonController : MonoBehaviour {
     public Animator CameraAnimator;
     [SerializeField] Button Button;
     [SerializeField] Text TextCordinate;
+    [SerializeField] AudioSource AudioSource;
     public List<Image> childImages = new List<Image>();
     public Image Image;
 
@@ -61,6 +62,8 @@ public class CordinateButtonController : MonoBehaviour {
         // Start Animation
         StartedAnimation = true;
         CurrentTime = 0.0f;
+
+        AudioSource.Play();
     }
 
     public void SetterOfCordinate (int x, int y) {

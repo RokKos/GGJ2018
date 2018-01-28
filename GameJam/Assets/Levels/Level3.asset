@@ -18,8 +18,8 @@ MonoBehaviour:
   LoseText: Pis Pis
   IndexOfImage: 1
   TankCord: []
-  PlaneCord: []
-  SubMarineCord:
-  - {x: 1, y: 4}
+  PlaneCord:
+  - {x: 6, y: 1}
+  SubMarineCord: []
   AutoComplete: 1
   FreeRoamMode: 0

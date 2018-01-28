@@ -18,12 +18,11 @@ MonoBehaviour:
   LoseText: Tutorial finished
   IndexOfImage: 0
   TankCord:
-  - {x: 2, y: 2}
-  - {x: 1, y: 5}
-  - {x: 4, y: 4}
+  - {x: 4, y: 2}
+  - {x: 4, y: 3}
   PlaneCord:
-  - {x: 3, y: 1}
+  - {x: 3, y: 3}
   SubMarineCord:
-  - {x: 2, y: 3}
+  - {x: 3, y: 4}
   AutoComplete: 1
   FreeRoamMode: 0
