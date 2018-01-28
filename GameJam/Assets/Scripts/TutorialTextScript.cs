@@ -15,8 +15,8 @@ public class TutorialTextScript : MonoBehaviour {
     string tutorialMorseText = "...";
     int nextChar = 0;
     int nextMorseChar = 0;
-    const float timeInterval = 0.48f;
-    const float timeMorseInterval = 0.24f;
+    const float timeInterval = 0.24f;
+    const float timeMorseInterval = 0.12f;
     float nextCharTime = 0;
     float nextMorseCharTime = 0;
 
@@ -35,7 +35,7 @@ public class TutorialTextScript : MonoBehaviour {
             audioSource.Stop();
             morseText.text = "";
             decodedText.text = "";
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 

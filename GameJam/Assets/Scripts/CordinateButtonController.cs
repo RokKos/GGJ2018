@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CordinateButtonController : MonoBehaviour {
 
+    [SerializeField] Animator cameraAnimator;
     [SerializeField] Button Button;
     [SerializeField] Text TextCordinate;
     public List<Image> childImages = new List<Image>();
@@ -50,6 +51,12 @@ public class CordinateButtonController : MonoBehaviour {
         Debug.Log(CordinateX + " " + CordinateY);
         Image.enabled = true;
         Image.color = Color.white;
+
+        // Shake Camera
+        if (cameraAnimator.gameObject.activeSelf) {
+            cameraAnimator.Play("shakeCamera");
+        }
+        cameraAnimator.SetTrigger("shakeCamera");
 
         // Start Animation
         StartedAnimation = true;

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
+    [SerializeField] Animator rightArmAnimator;
     [SerializeField] GameObject MorseHolder;
     [SerializeField] GameObject MapImage;
 
@@ -85,6 +86,9 @@ public class GameController : MonoBehaviour {
         if (DecodeText.enabled) {
             DecodeText.ResetDecode();
         }
+
+        // Play disk animation at tutorial start
+
 
         UserInput.ResetMorseText();
        

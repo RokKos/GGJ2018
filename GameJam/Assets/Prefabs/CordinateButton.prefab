@@ -154,6 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113b40ef362f34244928f8df0bb525d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraAnimator: {fileID: 95390722868966842, guid: 8eeee4fdad3bb054482db891e2d1a85c,
+    type: 2}
   Button: {fileID: 114850029183506580}
   TextCordinate: {fileID: 114853742984294128}
   childImages:
