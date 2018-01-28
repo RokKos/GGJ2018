@@ -11,6 +11,7 @@ public class MapController : MonoBehaviour {
     [SerializeField] Sprite TankSprite;
     [SerializeField] Sprite AirplaneTankSprite;
     [SerializeField] Sprite SubmarineSprite;
+    [SerializeField] CameraController CameraController;
 
     private List<CordinateButtonController> AllCordinates = new List<CordinateButtonController>();
     [SerializeField] List<Sprite> MapSprites = new List<Sprite>();
@@ -29,6 +30,7 @@ public class MapController : MonoBehaviour {
                 obj.name = "Cord: X:" + x.ToString() + " Y:" + y.ToString();
                 obj.GameController = GameController;
                 obj.Image.enabled = false;
+                obj.CameraAnimator = CameraController.CameraAnimator;
                 for (int k = 0; k < obj.childImages.Count; ++k) {
                     obj.childImages[k].sprite = TankSprite;
                     obj.childImages[k].enabled = false;

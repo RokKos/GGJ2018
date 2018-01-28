@@ -896,6 +896,36 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 93c8c13b4ff268244b58e1eb9f22113a,
         type: 3}
+    - target: {fileID: 114674699513592268, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114144636469528858, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114144636469528858, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.52205884
+      objectReference: {fileID: 0}
+    - target: {fileID: 114144636469528858, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.52205884
+      objectReference: {fileID: 0}
+    - target: {fileID: 114144636469528858, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.519
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418230937351984, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: CameraController
+      value: 
+      objectReference: {fileID: 1486142696}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
   m_IsPrefabParent: 0
@@ -1663,6 +1693,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1407136084}
+--- !u!95 &1486142695 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95390722868966842, guid: 8eeee4fdad3bb054482db891e2d1a85c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1694781543}
+--- !u!114 &1486142696 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114646144700838646, guid: 8eeee4fdad3bb054482db891e2d1a85c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1694781543}
+  m_Script: {fileID: 11500000, guid: f46ce383566228d4b8bff194481ed091, type: 3}
 --- !u!1001 &1694781543
 Prefab:
   m_ObjectHideFlags: 0
@@ -1707,6 +1748,11 @@ Prefab:
       propertyPath: GameController
       value: 
       objectReference: {fileID: 1127595307}
+    - target: {fileID: 114646144700838646, guid: 8eeee4fdad3bb054482db891e2d1a85c,
+        type: 2}
+      propertyPath: CameraAnimator
+      value: 
+      objectReference: {fileID: 1486142695}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8eeee4fdad3bb054482db891e2d1a85c, type: 2}
   m_IsPrefabParent: 0
