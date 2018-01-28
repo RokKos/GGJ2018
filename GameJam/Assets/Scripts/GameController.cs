@@ -128,5 +128,7 @@ public class GameController : MonoBehaviour {
         return AllLevelData[LevelNumber];
     }
 
-
+    public void ResetTransmition () {
+        StartLevel();
+    }
 }

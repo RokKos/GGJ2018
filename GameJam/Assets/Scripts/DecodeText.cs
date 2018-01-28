@@ -74,7 +74,6 @@ public class DecodeText : MonoBehaviour {
 
     void Decode()
     {
-        Debug.Log(currentLetter);
         if (currentLetter == "$") {
             RemoveOneLetter();
             decodedInputText.text += "#";
