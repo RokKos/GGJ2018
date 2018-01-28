@@ -24,7 +24,7 @@ public class TutorialTextScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         audioSource = GetComponent<AudioSource>();
-        PreLoadTutorialInstructions();
+        Invoke("PreLoadTutorialInstructions", 0.5f);
         decodeText.enabled = false;
         userInputedText.enabled = false;
     }

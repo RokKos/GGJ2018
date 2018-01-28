@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
+    [SerializeField] GameObject victoryPrefab;
+    [SerializeField] GameObject losePrefab;
     [SerializeField] Animator rightArmAnimator;
     [SerializeField] GameObject MorseHolder;
     [SerializeField] GameObject MapImage;
@@ -94,7 +96,7 @@ public class GameController : MonoBehaviour {
         }
 
         // Play disk animation at tutorial start
-
+        if (LevelNumber == 0) rightArmAnimator.SetTrigger("diskIn");
 
         UserInput.ResetMorseText();
         CheckForEndSound = false;
@@ -116,9 +118,11 @@ public class GameController : MonoBehaviour {
 
         if (EvaluateAction(x, y)) {
             // TODO: revard player
+            Reward();
             ResolutionText.text = AllLevelData[LevelNumber].WinText;
         } else {
             // TODO: penalize player
+            Penalize();
             ResolutionText.text = AllLevelData[LevelNumber].LoseText;
         }
 
@@ -126,6 +130,15 @@ public class GameController : MonoBehaviour {
         EnableScreenObjects();
 
         LevelNumber++;
+    }
+
+    void Reward()
+    {
+        Instantiate(victoryPrefab);
+    }
+    void Penalize()
+    {
+        Instantiate(losePrefab);
     }
 
     private bool EvaluateAction (int x, int y) {
