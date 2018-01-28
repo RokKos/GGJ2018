@@ -1,0 +1,1217 @@
+fileFormatVersion: 2
+guid: 8774bf35f755ca34c94f48509776acbd
+timeCreated: 1517102112
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zguba_0
+    21300002: zguba_1
+    21300004: zguba_2
+    21300006: zguba_3
+    21300008: zguba_4
+    21300010: zguba_5
+    21300012: zguba_6
+    21300014: zguba_7
+    21300016: zguba_8
+    21300018: zguba_9
+    21300020: zguba_10
+    21300022: zguba_11
+    21300024: zguba_12
+    21300026: zguba_13
+    21300028: zguba_14
+    21300030: zguba_15
+    21300032: zguba_16
+    21300034: zguba_17
+    21300036: zguba_18
+    21300038: zguba_19
+    21300040: zguba_20
+    21300042: zguba_21
+    21300044: zguba_22
+    21300046: zguba_23
+    21300048: zguba_24
+    21300050: zguba_25
+    21300052: zguba_26
+    21300054: zguba_27
+    21300056: zguba_28
+    21300058: zguba_29
+    21300060: zguba_30
+    21300062: zguba_31
+    21300064: zguba_32
+    21300066: zguba_33
+    21300068: zguba_34
+    21300070: zguba_35
+    21300072: zguba_36
+    21300074: zguba_37
+    21300076: zguba_38
+    21300078: zguba_39
+    21300080: zguba_40
+    21300082: zguba_41
+    21300084: zguba_42
+    21300086: zguba_43
+    21300088: zguba_44
+    21300090: zguba_45
+    21300092: zguba_46
+    21300094: zguba_47
+    21300096: zguba_48
+    21300098: zguba_49
+    21300100: zguba_50
+    21300102: zguba_51
+    21300104: zguba_52
+    21300106: zguba_53
+    21300108: zguba_54
+    21300110: zguba_55
+    21300112: zguba_56
+    21300114: zguba_57
+    21300116: zguba_58
+    21300118: zguba_59
+    21300120: zguba_60
+    21300122: zguba_61
+    21300124: zguba_62
+    21300126: zguba_63
+    21300128: zguba_64
+    21300130: zguba_65
+    21300132: zguba_66
+    21300134: zguba_67
+    21300136: zguba_68
+    21300138: zguba_69
+    21300140: zguba_70
+    21300142: zguba_71
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zguba_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_3
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_4
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_5
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_6
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_7
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_8
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 2443
+        width: 283
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2096
+        width: 283
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_10
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 2090
+        width: 283
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_11
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2085
+        width: 283
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_12
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 2080
+        width: 283
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_13
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 2074
+        width: 283
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_14
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 2069
+        width: 283
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_15
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 2065
+        width: 283
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_16
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 2064
+        width: 283
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_17
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 2060
+        width: 283
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_18
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1715
+        width: 283
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_19
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1715
+        width: 283
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_20
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1715
+        width: 283
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_21
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1716
+        width: 283
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_22
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1717
+        width: 277
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_23
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 1717
+        width: 278
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_24
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 1718
+        width: 278
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_25
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 1719
+        width: 279
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_26
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 1720
+        width: 280
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_27
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1378
+        width: 281
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_28
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1377
+        width: 282
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_29
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1377
+        width: 282
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_30
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1376
+        width: 283
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_31
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 1375
+        width: 284
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_32
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 1375
+        width: 285
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_33
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 1374
+        width: 286
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_34
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1374
+        width: 286
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_35
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 1373
+        width: 287
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1030
+        width: 288
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_37
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1031
+        width: 288
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_38
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1031
+        width: 290
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_39
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1032
+        width: 290
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_40
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1033
+        width: 291
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_41
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1034
+        width: 292
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_42
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 1034
+        width: 292
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_43
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 1035
+        width: 293
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_44
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1035
+        width: 294
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_45
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 692
+        width: 294
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_46
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 692
+        width: 295
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_47
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 692
+        width: 296
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_48
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 692
+        width: 296
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_49
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 692
+        width: 297
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_50
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 692
+        width: 298
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_51
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 692
+        width: 297
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_52
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 692
+        width: 294
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_53
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 692
+        width: 290
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_54
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_55
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_56
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_57
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_58
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_59
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_60
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_61
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_62
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 349
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_63
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_64
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_65
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_66
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_67
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_68
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_69
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_70
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zguba_71
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 6
+        width: 287
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -54,6 +54,7 @@ public class SoundController : MonoBehaviour {
         {"?","..--.." },
         { ":","---..." },
         { "@",".--.-." },
+        { " "," " },
         { "*", "*"}
     };
 
@@ -126,14 +127,6 @@ public class SoundController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        // manjka en if statement (bool startGame iz GameManager-ja) zato, da se naslednja koda lahko izvede samo enkrat
-        /*if (Input.GetKeyDown(KeyCode.Return)) {
-            string morseEncoding = TextToMorse(LevelText[0]);
-            MorseToSound(morseEncoding);
-            Debug.Log(morseEncoding);
-        }*/
-
         PlayEnuedSounds();
     }
 

@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour {
     [SerializeField] AnimationCurve AnimationCurvePositionX;
     [SerializeField] AnimationCurve AnimationCurvePositionY;
     [SerializeField] GameController GameController;
-    const float ZoomInScale = 6.5f;
+    const float ZoomInScale = 8.1f;
     const float ZoomOutScale = 17f;
     const float TimeToZoomOut = 3f;
     const float StartingPosX = -4.18f;
