@@ -9,17 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
-  m_Name: Level5
+  m_Name: Level7
   m_EditorClassIdentifier: 
-  TextFromAudio: 37 brigade is approcing C6. Position of our * bataljon is at D2.
-    Rain cover fire close to their position.
-  CorrectCordinateX: 4
+  TextFromAudio: Rain suppresing fire for our 26 tank batalon in B2. Watch out for
+    * at B3.
+  CorrectCordinateX: 2
   CorrectCordinateY: 2
-  WinText: Great Job! 37 Brigade crushed enemy do to your decision.
-  LoseText: 'You hit the wrong bataljon you fool. '
-  IndexOfImage: 1
+  WinText: Tanks escaped because of you.
+  LoseText: You killed 7543 civilians.
+  IndexOfImage: 0
   TankCord:
-  - {x: 2, y: 4}
+  - {x: 2, y: 2}
   PlaneCord: []
   SubMarineCord: []
   AutoComplete: 1

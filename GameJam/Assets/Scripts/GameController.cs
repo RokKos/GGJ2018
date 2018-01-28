@@ -119,10 +119,11 @@ public class GameController : MonoBehaviour {
     }
 
     public void GetPlayerAction (int x, int y) {
-        if (LevelNumber == 0) {
+        /*if (LevelNumber == 0) {
             Reward();
             ResolutionText.text = AllLevelData[LevelNumber].WinText;
         } else {
+        */
 
             if (EvaluateAction(x, y)) {
                 // TODO: revard player
@@ -133,7 +134,7 @@ public class GameController : MonoBehaviour {
                 Penalize();
                 ResolutionText.text = AllLevelData[LevelNumber].LoseText;
             }
-        }
+        //}
 
         PCState = PCScreenState.Resolution;
         EnableScreenObjects();

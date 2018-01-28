@@ -11,18 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  TextFromAudio: SOS * SOS
-  CorrectCordinateX: -1
-  CorrectCordinateY: -1
-  WinText: Tutorial finished
-  LoseText: Tutorial finished
-  IndexOfImage: 0
+  TextFromAudio: C2
+  CorrectCordinateX: 2
+  CorrectCordinateY: 3
+  WinText: Boom
+  LoseText: Miss
+  IndexOfImage: 1
   TankCord:
-  - {x: 2, y: 2}
-  - {x: 1, y: 5}
-  - {x: 4, y: 4}
-  PlaneCord:
-  - {x: 3, y: 1}
-  SubMarineCord:
   - {x: 2, y: 3}
+  PlaneCord: []
+  SubMarineCord: []
   AutoComplete: 1
+  FreeRoamMode: 0

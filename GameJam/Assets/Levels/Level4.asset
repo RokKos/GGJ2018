@@ -11,16 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
   m_Name: Level4
   m_EditorClassIdentifier: 
-  TextFromAudio: Rain suppresing fire for our 26 tank batalon in B2. Watch out for
-    * at B3.
-  CorrectCordinateX: 2
+  TextFromAudio: SOS * SOS B4
+  CorrectCordinateX: 4
   CorrectCordinateY: 2
-  WinText: Tanks escaped because of you.
-  LoseText: You killed 7543 civilians.
+  WinText: Tutorial finished
+  LoseText: Tutorial finished
   IndexOfImage: 0
   TankCord:
   - {x: 2, y: 2}
-  PlaneCord: []
-  SubMarineCord: []
+  - {x: 1, y: 5}
+  - {x: 4, y: 4}
+  PlaneCord:
+  - {x: 3, y: 1}
+  SubMarineCord:
+  - {x: 2, y: 3}
   AutoComplete: 1
   FreeRoamMode: 0
