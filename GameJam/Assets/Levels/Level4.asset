@@ -15,8 +15,8 @@ MonoBehaviour:
     * at B3.
   CorrectCordinateX: 2
   CorrectCordinateY: 2
-  WinText: 
-  LoseText: 
+  WinText: Tanks escaped because of you.
+  LoseText: You killed 7543 civilians.
   IndexOfImage: 0
   TankCord:
   - {x: 2, y: 2}

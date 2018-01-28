@@ -15,11 +15,12 @@ MonoBehaviour:
     gun. Cut the * comming from A5.
   CorrectCordinateX: 5
   CorrectCordinateY: 1
-  WinText: 
-  LoseText: 
+  WinText: You saved our birds.
+  LoseText: All our birds were killed.
   IndexOfImage: 1
   TankCord: []
   PlaneCord:
   - {x: 5, y: 4}
   SubMarineCord: []
   AutoComplete: 1
+  FreeRoamMode: 0

@@ -11,12 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bec0d243004e1340b9322a5c979df90, type: 3}
   m_Name: Level5
   m_EditorClassIdentifier: 
-  TextFromAudio: Your maceha is comming from D6. Your wife is comming from A2. They
+  TextFromAudio: Your mother is comming from D6. Your wife is comming from A2. They
     are going to * at B4. You can destroy bridge at B3 or C5.
   CorrectCordinateX: 4
   CorrectCordinateY: 6
-  WinText: 
-  LoseText: 
+  WinText: You prevented meting.
+  LoseText: Wife left you.
   IndexOfImage: 0
   TankCord: []
   PlaneCord: []
