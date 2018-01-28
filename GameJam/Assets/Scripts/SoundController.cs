@@ -218,6 +218,9 @@ public class SoundController : MonoBehaviour {
             }
         }
 
+        SoundsToPlay.Enqueue(MorseSoundNames.PauseBetweenWords);
+        SoundsToPlay.Enqueue(MorseSoundNames.PauseBetweenWords);
+
     }
 
     void PlayEnuedSounds () {

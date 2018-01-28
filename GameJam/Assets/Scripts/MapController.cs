@@ -94,6 +94,10 @@ public class MapController : MonoBehaviour {
         for (int i = 0; i < AllCordinates.Count; ++i) {
             AllCordinates[i].Image.enabled = false;
             AllCordinates[i].Image.color = Color.white;
+
+            for (int k = 0; k < AllCordinates[i].childImages.Count; ++k) {
+                AllCordinates[i].childImages[k].enabled = false;
+            }
         }
     }
 
