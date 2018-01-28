@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class DecodeText : MonoBehaviour {
 
     public static string morseToSoundEncoding;
+    [SerializeField] UserInput UserInput;
     [SerializeField] Text inputText;
-    Text decodedInputText;
+    [SerializeField] Text decodedInputText;
 
     int letterCounter = 0;
     string currentLetter = "";
@@ -17,7 +18,6 @@ public class DecodeText : MonoBehaviour {
 
     private void Start()
     {
-        decodedInputText = GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -39,13 +39,16 @@ public class DecodeText : MonoBehaviour {
         foreach (char c in inputText.text) {
             counter++;
             if (c == ' ' || c == '#') {
+                Debug.Log(lastSlashIndex + " NEW: " + newSlashIndex);
                 newSlashIndex = counter;
             }
         }
 
         if (newSlashIndex > lastSlashIndex) {
             lastSlashIndex = newSlashIndex;
+            
             currentLetter = inputText.text.Substring(lastSlashIndex, inputText.text.Length - lastSlashIndex);
+            Debug.Log(currentLetter);
             return true;
         } else {
             return false;
@@ -71,9 +74,16 @@ public class DecodeText : MonoBehaviour {
 
     void Decode()
     {
-        currentLetterDecoded = DecodeLetter(currentLetter);
-        RemoveOneLetter();
-        decodedInputText.text += currentLetterDecoded;
+        Debug.Log(currentLetter);
+        if (currentLetter == "$") {
+            RemoveOneLetter();
+            decodedInputText.text += "#";
+        } else {
+            currentLetterDecoded = DecodeLetter(currentLetter);
+            RemoveOneLetter();
+            decodedInputText.text += currentLetterDecoded;
+        }
+        
     }
 
     string DecodeLetter(string morseCode)

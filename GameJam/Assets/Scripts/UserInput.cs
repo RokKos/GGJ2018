@@ -64,7 +64,7 @@ public class UserInput : MonoBehaviour {
         MorseHolder.text += signal;
     }
 
-    void RemoveLetter()
+    public void RemoveLetter()
     {
         if (MorseHolder.text.Length > 0) {
             MorseHolder.text = MorseHolder.text.Substring(0, MorseHolder.text.Length - 1);
@@ -73,7 +73,7 @@ public class UserInput : MonoBehaviour {
 
     void Noise()
     {
-        MorseHolder.text += " #";
+        MorseHolder.text += "#$";
     }
 
     public void ResetMorseText () {

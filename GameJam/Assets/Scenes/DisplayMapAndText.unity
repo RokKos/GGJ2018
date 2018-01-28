@@ -543,6 +543,16 @@ Prefab:
       propertyPath: GameController
       value: 
       objectReference: {fileID: 1127595307}
+    - target: {fileID: 114569302741531806, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: decodedInputText
+      value: 
+      objectReference: {fileID: 74426386}
+    - target: {fileID: 114569302741531806, guid: aaafe1e1300a10b4b8e6d87dda7ee66e,
+        type: 2}
+      propertyPath: UserInput
+      value: 
+      objectReference: {fileID: 154574572}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aaafe1e1300a10b4b8e6d87dda7ee66e, type: 2}
   m_IsPrefabParent: 0
