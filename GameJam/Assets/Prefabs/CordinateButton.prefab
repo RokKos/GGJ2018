@@ -154,8 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113b40ef362f34244928f8df0bb525d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraAnimator: {fileID: 95390722868966842, guid: 8eeee4fdad3bb054482db891e2d1a85c,
-    type: 2}
+  CameraAnimator: {fileID: 0}
   Button: {fileID: 114850029183506580}
   TextCordinate: {fileID: 114853742984294128}
   childImages:
@@ -441,5 +440,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 53, y: 51}
-  m_SizeDelta: {x: 145, y: 145}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
